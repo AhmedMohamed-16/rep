@@ -9,10 +9,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: "test action"
         run: pwd
-
-      - uses: actions/checkout@v3
