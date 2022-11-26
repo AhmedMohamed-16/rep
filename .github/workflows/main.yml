@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu_latest
 
     steps:
-      - name: 'test action'
+      - name: "test action"
         run: pwd
 
       - uses: actions/checkout@v3
