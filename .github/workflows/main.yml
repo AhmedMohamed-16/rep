@@ -12,5 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "test action"
-        run: pwd
+      - uses:actions/checkout@v3
+
+      - name: "login docker"
+        run: docker login --username ahmedmohamed16 --password dckr_pat_y3woTCllimrlvEghyoJwLZG18-I 
