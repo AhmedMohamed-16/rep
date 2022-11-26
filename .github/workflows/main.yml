@@ -1,1 +1,21 @@
 
+on:
+  push:
+    branches:
+      - master
+
+
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu_latest
+
+
+    steps:
+      - name: 'test action'
+        run :pwd
+      -name: 'test print'
+       run:echo ahmed  
