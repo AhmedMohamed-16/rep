@@ -16,3 +16,7 @@ jobs:
 
       - name: "login docker"
         run: docker login --username ${{ secrets.DOCKER_USER_NAME }} --password ${{ secrets.DOCKER_PASSWORD }}
+      - name: "docker build"
+        run: docker build -t ${{ secrets.DOCKER_USER_NAME }}/img .
+      - name: "publish to dockerhub"
+        run: docker push  ${{ secrets.DOCKER_USER_NAME }}/img
