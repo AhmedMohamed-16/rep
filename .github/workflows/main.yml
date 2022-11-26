@@ -15,6 +15,6 @@ jobs:
 
     steps:
       - name: 'test action'
-        run :pwd
+        run: pwd
       -name: 'test print'
-       run:echo ahmed  
+       run: echo ahmed  
